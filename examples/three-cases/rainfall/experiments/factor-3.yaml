@@ -1,0 +1,11 @@
+schema: researchkit.experiment/v1
+name: factor-3
+description: 对照方案：保持输入数据不变，将倍率改为 3，处理后总量应为 30。
+case_parameters:
+  data_source: local
+  dataset_id: ''
+  data_root: sample-data
+  data_format: directory
+algorithm_parameters:
+  scale:
+    factor: 3

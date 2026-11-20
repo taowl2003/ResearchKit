@@ -1,0 +1,12 @@
+schema: hydro.plugin/v1
+name: rainfall.scale
+version: 1.0.0
+entry: plugin.py
+inputs: {}
+outputs:
+  summary: mapping@1.0.0
+parameters:
+  factor:
+    type: number
+    required: true
+    minimum: 0

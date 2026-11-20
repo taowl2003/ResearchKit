@@ -1,0 +1,11 @@
+# 可选：IDE使用的个人SSH配置示例，不覆盖原有全局配置。
+# 服务器地址/端口以教师通知为准。两个REPLACE字段必须自行替换。
+# IdentityFile对应首次启动后connection.json中的identityFile（Windows本机路径）。
+Host researchkit-student
+    HostName 125.220.134.194
+    Port 8222
+    User REPLACE_WITH_YOUR_ACCOUNT
+    IdentityFile "REPLACE_WITH_IDENTITY_FILE"
+    IdentitiesOnly yes
+    ServerAliveInterval 30
+    ServerAliveCountMax 3

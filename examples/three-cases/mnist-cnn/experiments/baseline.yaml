@@ -1,0 +1,17 @@
+schema: researchkit.experiment/v1
+name: baseline
+description: 使用真实 MNIST 十分类的基线方案；自动选择可用 GPU，否则使用 CPU。
+case_parameters:
+  data_source: dataset
+  dataset_id: ''
+  data_root: ''
+algorithm_parameters:
+  cnn:
+    epochs: 3
+    learning_rate: 0.001
+    batch_size: 64
+    train_limit: 10000
+    test_limit: 2000
+    seed: 42
+    device: auto
+    num_workers: 0

@@ -1,0 +1,65 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "降雨：倍率2",
+      "type": "debugpy",
+      "request": "launch",
+      "program": "${workspaceFolder}/run_experiment.py",
+      "cwd": "${workspaceFolder}",
+      "args": ["--scheme", "factor-2"],
+      "console": "integratedTerminal",
+      "justMyCode": true
+    },
+    {
+      "name": "降雨：倍率3",
+      "type": "debugpy",
+      "request": "launch",
+      "program": "${workspaceFolder}/run_experiment.py",
+      "cwd": "${workspaceFolder}",
+      "args": ["--scheme", "factor-3"],
+      "console": "integratedTerminal",
+      "justMyCode": true
+    },
+    {
+      "name": "CNN：基线",
+      "type": "debugpy",
+      "request": "launch",
+      "program": "${workspaceFolder}/run_experiment.py",
+      "cwd": "${workspaceFolder}",
+      "args": ["--scheme", "cnn-baseline"],
+      "console": "integratedTerminal",
+      "justMyCode": true
+    },
+    {
+      "name": "CNN：学习率对照",
+      "type": "debugpy",
+      "request": "launch",
+      "program": "${workspaceFolder}/run_experiment.py",
+      "cwd": "${workspaceFolder}",
+      "args": ["--scheme", "cnn-learning-rate"],
+      "console": "integratedTerminal",
+      "justMyCode": true
+    },
+    {
+      "name": "水声：声速1500",
+      "type": "debugpy",
+      "request": "launch",
+      "program": "${workspaceFolder}/run_experiment.py",
+      "cwd": "${workspaceFolder}",
+      "args": ["--scheme", "sound-speed-1500"],
+      "console": "integratedTerminal",
+      "justMyCode": true
+    },
+    {
+      "name": "水声：声速1480",
+      "type": "debugpy",
+      "request": "launch",
+      "program": "${workspaceFolder}/run_experiment.py",
+      "cwd": "${workspaceFolder}",
+      "args": ["--scheme", "sound-speed-1480"],
+      "console": "integratedTerminal",
+      "justMyCode": true
+    }
+  ]
+}

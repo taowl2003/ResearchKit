@@ -1,0 +1,28 @@
+schema: hydro.plugin/v1
+name: acoustic.simulator
+version: 1.0.0
+entry: plugin.py
+inputs: {}
+outputs:
+  sim_data: mapping@1.0.0
+parameters:
+  sound_speed_m_s:
+    type: number
+    required: true
+    default: 1500.0
+    minimum: 1.0
+  seed:
+    type: integer
+    required: true
+    default: 2026
+  ping_count:
+    type: integer
+    required: true
+    default: 10
+    minimum: 1
+    maximum: 1000
+  noise_std_s:
+    type: number
+    required: true
+    default: 0.0
+    minimum: 0.0

@@ -1,0 +1,16 @@
+schema: hydro.plugin/v1
+name: acoustic.doa
+version: 1.0.0
+entry: plugin.py
+inputs:
+  sim_data: mapping@1.0.0
+outputs:
+  bearing_data: mapping@1.0.0
+parameters:
+  method:
+    type: string
+    required: true
+    default: direct_tdoa
+    enum:
+    - direct_tdoa
+    - smooth_tdoa

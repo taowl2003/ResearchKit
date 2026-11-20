@@ -1,0 +1,16 @@
+schema: researchkit.project/v1
+name: hello
+mode: python
+entry: case.py
+plugins:
+  scale:
+    path: .researchkit/plugins/scale
+    parameters:
+      factor: 3
+parameters:
+  value: 2
+data: {}
+requires:
+  python: '3.11'
+  modules: []
+  minimums: {}

@@ -1,0 +1,53 @@
+schema: hydro.plugin/v1
+name: mnist.cnn
+version: 1.0.0
+entry: plugin.py
+inputs: {}
+outputs:
+  summary: mapping@1.0.0
+parameters:
+  epochs:
+    type: integer
+    required: true
+    default: 3
+    minimum: 1
+    maximum: 1000
+  learning_rate:
+    type: number
+    required: true
+    default: 0.001
+    minimum: 0.0000001
+    maximum: 10.0
+  batch_size:
+    type: integer
+    required: true
+    default: 64
+    minimum: 1
+    maximum: 4096
+  train_limit:
+    type: integer
+    required: true
+    default: 10000
+    minimum: 1
+    maximum: 60000
+  test_limit:
+    type: integer
+    required: true
+    default: 2000
+    minimum: 1
+    maximum: 10000
+  seed:
+    type: integer
+    required: true
+    default: 42
+  device:
+    type: string
+    required: true
+    default: auto
+    enum: [auto, cpu, cuda]
+  num_workers:
+    type: integer
+    required: true
+    default: 0
+    minimum: 0
+    maximum: 32

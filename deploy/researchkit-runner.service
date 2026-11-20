@@ -1,0 +1,31 @@
+[Unit]
+Description=ResearchKit Web isolated execution worker
+After=network.target researchkit-broker.service
+Wants=researchkit-broker.service
+
+[Service]
+Type=notify
+NotifyAccess=main
+TimeoutStartSec=30
+User=researchkit-runner
+Group=researchkit-runner
+UMask=0077
+StateDirectory=researchkit-runner
+StateDirectoryMode=0700
+ExecStart=/opt/researchkit-web/venv/bin/python -I -m researchkit.web_runner --policy /etc/researchkit-web/policy.json
+Restart=on-failure
+RestartSec=3
+MemoryMax=768M
+MemorySwapMax=0
+TasksMax=64
+CPUQuota=100%
+KillMode=control-group
+OOMPolicy=kill
+NoNewPrivileges=yes
+PrivateTmp=yes
+ProtectHome=yes
+ProtectSystem=strict
+ReadWritePaths=/var/lib/researchkit-runner
+
+[Install]
+WantedBy=multi-user.target

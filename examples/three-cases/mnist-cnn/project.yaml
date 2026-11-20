@@ -1,0 +1,25 @@
+schema: researchkit.project/v1
+name: mnist-cnn-digit-classification
+mode: python
+entry: case.py
+plugins:
+  cnn:
+    path: algorithms/cnn
+    parameters:
+      epochs: 3
+      learning_rate: 0.001
+      batch_size: 64
+      train_limit: 10000
+      test_limit: 2000
+      seed: 42
+      device: auto
+      num_workers: 0
+parameters:
+  data_source: dataset
+  dataset_id: ''
+  data_root: ''
+data: {}
+requires:
+  python: '3.11'
+  modules: [torch, numpy, matplotlib]
+  minimums: {}

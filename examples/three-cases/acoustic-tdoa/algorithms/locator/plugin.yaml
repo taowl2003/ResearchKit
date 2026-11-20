@@ -1,0 +1,12 @@
+schema: hydro.plugin/v1
+name: acoustic.locator
+version: 1.0.0
+entry: plugin.py
+inputs: {}
+outputs:
+  summary: mapping@1.0.0
+parameters:
+  sound_speed_m_s:
+    type: number
+    required: true
+    minimum: 1

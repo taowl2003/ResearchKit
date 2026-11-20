@@ -1,0 +1,11 @@
+schema: researchkit.experiment/v1
+name: sound-speed-1500
+description: 基线方案：定位使用与合成观测一致的声速 1500 m/s。
+case_parameters:
+  data_source: local
+  dataset_id: ''
+  data_root: sample-data
+  data_format: directory
+algorithm_parameters:
+  locator:
+    sound_speed_m_s: 1500.0

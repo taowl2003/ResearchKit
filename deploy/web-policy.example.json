@@ -1,0 +1,13 @@
+{
+  "schema": "researchkit.web-policy/v1",
+  "access_mode": "ssh-users",
+  "min_uid": 1000,
+  "teacher": "ly",
+  "broker": {
+    "uid": 2001,
+    "username": "researchkit-web"
+  },
+  "broker_socket": "/run/researchkit-web/broker.sock",
+  "submission_store": "/var/lib/researchkit-web/submissions",
+  "code_root": "/opt/researchkit-web/app"
+}

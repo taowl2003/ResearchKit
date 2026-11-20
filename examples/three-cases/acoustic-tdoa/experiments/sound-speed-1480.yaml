@@ -1,0 +1,11 @@
+schema: researchkit.experiment/v1
+name: sound-speed-1480
+description: 对照方案：保持同一份时差观测，只将解算声速改为 1480 m/s。
+case_parameters:
+  data_source: local
+  dataset_id: ''
+  data_root: sample-data
+  data_format: directory
+algorithm_parameters:
+  locator:
+    sound_speed_m_s: 1480.0

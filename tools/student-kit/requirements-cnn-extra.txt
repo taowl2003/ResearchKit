@@ -1,0 +1,4 @@
+# CNN的附加依赖。PyTorch需按教师科研环境或官方CPU/CUDA指引另行安装。
+-r requirements-basic.txt
+numpy>=1.24
+matplotlib>=3.6

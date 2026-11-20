@@ -1,0 +1,12 @@
+schema: hydro.plugin/v1
+name: example.scale
+version: 1.0.0
+entry: plugin.py
+inputs:
+  value: scalar@1.0.0
+outputs:
+  value: scalar@1.0.0
+parameters:
+  factor:
+    type: number
+    required: true

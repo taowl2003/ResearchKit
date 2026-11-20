@@ -1,0 +1,11 @@
+schema: researchkit.experiment/v1
+name: factor-2
+description: 基线方案：三条合成降雨记录乘以 2，处理后总量应为 20。
+case_parameters:
+  data_source: local
+  dataset_id: ''
+  data_root: sample-data
+  data_format: directory
+algorithm_parameters:
+  scale:
+    factor: 2

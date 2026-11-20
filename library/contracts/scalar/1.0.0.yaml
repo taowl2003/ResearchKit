@@ -1,0 +1,4 @@
+schema: hydro.contract/v1
+id: scalar@1.0.0
+type: number
+description: A Python numeric scalar.

@@ -1,0 +1,47 @@
+# Personal state and credentials
+.env
+.env.*
+!.env.example
+**/connection.json
+**/authorized_keys
+**/id_rsa*
+**/id_ed25519*
+*.pem
+*.key
+
+# Local environments, editors and test leftovers
+.web-venv/
+.venv/
+venv/
+.vscode/
+.idea/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+__pycache__/
+*.py[cod]
+*.egg-info/
+.coverage
+htmlcov/
+.work-backups/
+.rk-*/
+
+# Operational content is not platform source
+projects/
+inbox/
+exports/
+library/bundles/
+library/projects/
+*.sqlite*
+*.db
+*.blob
+*.log
+**/_runs/
+**/results/
+**/.researchkit-web-state.json
+
+# Local handoff and historical deployment evidence
+PLAN.md
+docs/web-implementation-handoff.md
+docs/source-before.json
+docs/ResearchKit.code-workspace

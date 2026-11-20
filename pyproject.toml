@@ -1,0 +1,26 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "researchkit-local"
+version = "0.1.0"
+description = "Portable local research projects"
+requires-python = ">=3.11"
+dependencies = ["PyYAML>=6"]
+
+[project.optional-dependencies]
+test = ["pytest>=7"]
+web = ["tornado==6.5.10", "PyYAML==6.0.3"]
+
+[project.scripts]
+rk = "researchkit.cli:main"
+
+[tool.setuptools]
+package-dir = {"" = "core"}
+
+[tool.setuptools.packages.find]
+where = ["core"]
+
+[tool.setuptools.package-data]
+researchkit = ["web_static/*"]

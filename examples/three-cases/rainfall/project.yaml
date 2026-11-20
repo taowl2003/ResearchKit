@@ -1,0 +1,20 @@
+schema: researchkit.project/v1
+name: rainfall-experiment
+mode: python
+entry: case.py
+plugins:
+  scale:
+    path: algorithms/scale
+    parameters:
+      factor: 2
+parameters:
+  data_source: local
+  dataset_id: ''
+  data_root: sample-data
+  data_format: directory
+  experiment_scheme: factor-2
+data: {}
+requires:
+  python: '3.11'
+  modules: []
+  minimums: {}

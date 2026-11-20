@@ -1,0 +1,17 @@
+{
+  "schema": "researchkit.source-publication/v1",
+  "date": "2026-11-20",
+  "student_guide": "docs/学生使用指南.md",
+  "student_package": "downloads/ResearchKit-Student.zip",
+  "student_sha256": "1bc573358274f93fcc113279ae4997c696535945ca83a2b0a6a640d42e676033",
+  "excluded": [
+    "user workspaces",
+    "private configs and keys",
+    "databases",
+    "real research datasets",
+    "old releases",
+    "operational handoff logs"
+  ],
+  "source_changes": "README/ignore rules; current public maintenance/architecture summaries",
+  "application_source": "copied without changing application logic"
+}
